@@ -1,32 +1,125 @@
+html {
+  background-color: white !important;
+}
+
+body {
+  background-color: white !important;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100vw !important;
+  height: 100vh  !important;
+  overflow: hidden;
+  position: fixed;
+
+}
+
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 80px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-intro {
+  font-size: large;
+}
+
+.container {
+  width: auto;
+  min-width: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+
+/* Loader */
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #672B8B;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+}
+
+
+
+::-webkit-scrollbar-track {
+  margin-top: 10px;
+  background: inherit;
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #01BFB3;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 1px;
+    height: 2px;
   }
-  to {
-    transform: rotate(360deg);
+  ::-webkit-scrollbar-thumb {
+    background: #01BFB3;
+    border-radius: 10px;
   }
 }
+
+
+
+
+
