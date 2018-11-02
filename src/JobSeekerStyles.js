@@ -9,13 +9,19 @@ const JobSeekerStyles = StyleSheet.create({
 
     panel: {
         width:'450px',
-        height: '650px',
+        //height: '650px',
+        height: 'auto',
         margin: '50px auto',
         boxShadow: '0 0 15px 5px #cccccc',
         padding:'15px 25px',
         fontFamily: 'Raleway, sans-serif',
         color: '#1A75FF'
 
+    },
+
+    formSuccess: {
+        color: 'green',
+        fontWeight: 'bold'
     },
 
     div: {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import JobSeeker from "./JobSeeker"
+import TrainModel from "./TrainModel"
 
 class App extends Component {
 
@@ -13,7 +14,8 @@ class App extends Component {
             <Router>
                 <div className="App container">
                     <div>
-                        <Route exact path = "/" component = {JobSeeker} />
+                        <Route exact path = "/" component = {TrainModel} />
+                        <Route exact path = "/predict" component = {JobSeeker} />
                     </div>
                 </div>
             </Router>
