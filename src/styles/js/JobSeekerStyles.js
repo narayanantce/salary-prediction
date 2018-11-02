@@ -1,5 +1,4 @@
-import {StyleSheet} from 'aphrodite'
-
+import { StyleSheet } from 'aphrodite';
 
 const JobSeekerStyles = StyleSheet.create({
 
@@ -9,7 +8,6 @@ const JobSeekerStyles = StyleSheet.create({
 
     panel: {
         width:'450px',
-        //height: '650px',
         height: 'auto',
         margin: '50px auto',
         boxShadow: '0 0 15px 5px #cccccc',
@@ -29,12 +27,23 @@ const JobSeekerStyles = StyleSheet.create({
     },
 
     form: {
-        padding:'15px',
-        margin: '15px auto'
+        padding:'5px',
+        margin: '25px auto'
+    },
+
+    marginTopForm: {
+        marginTop: '7px'
     },
 
     salaryheader: {
         textAlign: 'center',
+    },
+
+    inputText: {
+        width: '100%',
+        padding: '12px 20px',
+        margin: '8px 0',
+        boxSizing: 'border-box'
     },
       
     button: {
@@ -52,9 +61,9 @@ const JobSeekerStyles = StyleSheet.create({
         width: '60%',
         textAlign: 'center',
         position: 'relative',
-
+        fontWeight: 'bold',
+        fontSize: 'small'
     },
 })
 
-
-export {JobSeekerStyles};
+export default JobSeekerStyles;

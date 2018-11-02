@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from "react-router-dom"
-import JobSeeker from "./JobSeeker"
-import TrainModel from "./TrainModel"
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import JobSeeker from "./JobSeeker";
+import TrainModel from "./TrainModel";
 
 class App extends Component {
-
-    constructor() {
-        super();
-    }
-
     render() {
         return (
             <Router>
@@ -22,7 +18,5 @@ class App extends Component {
         );
     }
 }
-
-
 
 export default App;
